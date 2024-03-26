@@ -6,9 +6,9 @@ import 'package:flutter/material.dart';
 class MyController {
   TextEditingController txtFirst = TextEditingController(text: 'Drashti');
   TextEditingController txtLast = TextEditingController(text: 'Patel');
-  TextEditingController txtPhoneNo = TextEditingController(text: '9327612452');
+  TextEditingController txtPhoneNo = TextEditingController(text: '6523145231');
   TextEditingController txtWeb = TextEditingController(text: 'www.hello.com');
-  TextEditingController txtJob = TextEditingController(text: 'job');
+  TextEditingController txtJob = TextEditingController(text: 'Job');
   TextEditingController txtGender = TextEditingController(text: 'Female');
   TextEditingController txtEmail = TextEditingController(text: 'drashti@gmail.com');
   TextEditingController txtBirth = TextEditingController(text: '29-06-2005');
@@ -19,11 +19,11 @@ class MyController {
 
 // award
 class MyController2 {
-  TextEditingController txtAward = TextEditingController();
-  TextEditingController txtIssuer = TextEditingController();
-  TextEditingController txtYear = TextEditingController();
+  TextEditingController txtAward = TextEditingController(text: 'Leadership Award');
+  TextEditingController txtIssuer = TextEditingController(text: 'Rakesh Pathak');
+  TextEditingController txtYear = TextEditingController(text: '2019');
   TextEditingController txtMonth = TextEditingController();
-  TextEditingController txtDes = TextEditingController();
+  TextEditingController txtDes = TextEditingController(text: 'Award names for leadership. Leadership awards honor the role models creating positive change for their organizations and industries.');
 }
 
 // declaration
@@ -33,7 +33,7 @@ class MyController3 {
 
 // about
 class MyController4 {
-  TextEditingController txtdabout = TextEditingController(text: 'I am a flexible person seeking employment which\n will allow development, growth and make\nuse of my existing skills');
+  TextEditingController txtdabout = TextEditingController(text: 'I am a flexible person seeking employment which will allow development, growth and make use of my existing skills');
 }
 
 // education

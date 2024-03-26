@@ -25,7 +25,7 @@ class _ReferenceScreenState extends State<ReferenceScreen> {
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 9),
               child: Container(
-                height: height / 2.7,
+                height: height / 2.6,
                 width: width,
                 decoration: BoxDecoration(
                   color: Colors.white,
@@ -224,7 +224,7 @@ class _ReferenceScreenState extends State<ReferenceScreen> {
                               ),
                             ),
                           ),
-                          const SizedBox(width: 56,),
+                          const SizedBox(width: 50,),
                           IconButton(onPressed: () {
                             setState(() {
 
@@ -241,7 +241,7 @@ class _ReferenceScreenState extends State<ReferenceScreen> {
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 9),
                   child: Container(
-                    height: height / 2.7,
+                    height: height / 2.6,
                     width: width,
                     decoration: BoxDecoration(
                       color: Colors.white,
@@ -440,7 +440,7 @@ class _ReferenceScreenState extends State<ReferenceScreen> {
                                   ),
                                 ),
                               ),
-                              const SizedBox(width: 56,),
+                              const SizedBox(width: 50,),
                               IconButton(onPressed: () {
                                 setState(() {
                                   txtRefeController!.removeAt(index);

@@ -439,94 +439,89 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                         ),
                       ),
-                      sd.Column(
-                        children: [
-                          ...List.generate(resumeData.skillList!.length, (index) => sd.Text(resumeData.skillList![index],style: sd.TextStyle(fontSize: 20))),
-                        ],
+                      sd.Positioned(
+                        top: 530,
+                        left: 30,
+                        child: sd.Row(
+                          children: [
+                            sd.Text(
+                              'Programming',
+                              style: sd.TextStyle(
+                                  color: PdfColors.white,
+                                  fontWeight: sd.FontWeight.bold,
+                                  fontSize: 16),
+                            ),
+                          ],
+                        ),
                       ),
-                      // sd.Positioned(
-                      //   top: 530,
-                      //   left: 30,
-                      //   child: sd.Row(
-                      //     children: [
-                      //       sd.Text(
-                      //         '',
-                      //         style: sd.TextStyle(
-                      //             color: PdfColors.white,
-                      //             fontWeight: sd.FontWeight.bold,
-                      //             fontSize: 16),
-                      //       ),
-                      //     ],
-                      //   ),
-                      // ),
-                      // sd.Positioned(
-                      //   top: 560,
-                      //   left: 30,
-                      //   child: sd.Row(
-                      //     children: [
-                      //       sd.Text(
-                      //         'Time Management',
-                      //         style: sd.TextStyle(
-                      //             color: PdfColors.white,
-                      //             fontWeight: sd.FontWeight.bold,
-                      //             fontSize: 16),
-                      //       ),
-                      //     ],
-                      //   ),
-                      // ),
-                      // sd.Positioned(
-                      //   top: 590,
-                      //   left: 30,
-                      //   child: sd.Row(
-                      //     children: [
-                      //       sd.Text(
-                      //         'Graphic Design',
-                      //         style: sd.TextStyle(
-                      //             color: PdfColors.white,
-                      //             fontWeight: sd.FontWeight.bold,
-                      //             fontSize: 16),
-                      //       ),
-                      //     ],
-                      //   ),
-                      // ),
-                      // sd.Positioned(
-                      //   top: 620,
-                      //   left: 30,
-                      //   child: sd.Row(
-                      //     children: [
-                      //       sd.Text(
-                      //         'Branding',
-                      //         style: sd.TextStyle(
-                      //             color: PdfColors.white,
-                      //             fontWeight: sd.FontWeight.bold,
-                      //             fontSize: 16),
-                      //       ),
-                      //     ],
-                      //   ),
-                      // ),
-                      // sd.Positioned(
-                      //   top: 650,
-                      //   left: 30,
-                      //   child: sd.Row(
-                      //     children: [
-                      //       sd.Text(
-                      //         'SEO',
-                      //         style: sd.TextStyle(
-                      //             color: PdfColors.white,
-                      //             fontWeight: sd.FontWeight.bold,
-                      //             fontSize: 16),
-                      //       ),
-                      //     ],
-                      //   ),
-                      // ),
+                      sd.Positioned(
+                        top: 560,
+                        left: 30,
+                        child: sd.Row(
+                          children: [
+                            sd.Text(
+                              'Time Management',
+                              style: sd.TextStyle(
+                                  color: PdfColors.white,
+                                  fontWeight: sd.FontWeight.bold,
+                                  fontSize: 16),
+                            ),
+                          ],
+                        ),
+                      ),
+                      sd.Positioned(
+                        top: 590,
+                        left: 30,
+                        child: sd.Row(
+                          children: [
+                            sd.Text(
+                              'Graphic Design',
+                              style: sd.TextStyle(
+                                  color: PdfColors.white,
+                                  fontWeight: sd.FontWeight.bold,
+                                  fontSize: 16),
+                            ),
+                          ],
+                        ),
+                      ),
+                      sd.Positioned(
+                        top: 620,
+                        left: 30,
+                        child: sd.Row(
+                          children: [
+                            sd.Text(
+                              'Branding',
+                              style: sd.TextStyle(
+                                  color: PdfColors.white,
+                                  fontWeight: sd.FontWeight.bold,
+                                  fontSize: 16),
+                            ),
+                          ],
+                        ),
+                      ),
+                      sd.Positioned(
+                        top: 650,
+                        left: 30,
+                        child: sd.Row(
+                          children: [
+                            sd.Text(
+                              'SEO',
+                              style: sd.TextStyle(
+                                  color: PdfColors.white,
+                                  fontWeight: sd.FontWeight.bold,
+                                  fontSize: 16),
+                            ),
+                          ],
+                        ),
+                      ),
                     ],
                   ),
                   sd.Column(
-                    //crossAxisAlignment: sd.CrossAxisAlignment.start,
+                    crossAxisAlignment: sd.CrossAxisAlignment.start,
                     children: [
                       sd.SizedBox(width: 5),
                       sd.Text(
-                        resumeData.firstName!,
+                        '  Drashti',
                         style: sd.TextStyle(
                           fontSize: 60,
                           color: const PdfColor.fromInt(0xff19256E),
@@ -534,7 +529,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ),
                       sd.Text(
-                        resumeData.lastName!,
+                        '  Patel',
                         style: const sd.TextStyle(
                           fontSize: 40,
                           color: PdfColor.fromInt(0xff19256E),
@@ -562,7 +557,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         height: 15,
                       ),
                       sd.Text(
-                        resumeData.aboutMe!,
+                        '     Contrary to popular belief, Lorem Ipsum is not\n      simply random text. It has roots in a piece of\n     classical Latin literature from 45 BC, making it over\n     2000 years old.',
                         style: const sd.TextStyle(
                           fontSize: 15,
                           color: PdfColors.grey,
@@ -591,7 +586,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       sd.Row(
                         children: [
                           sd.Text(
-                            resumeData.job!,
+                            '     Flutter Developer',
                             style: sd.TextStyle(
                               fontSize: 15,
                               color: const PdfColor.fromInt(0xff19256E),
@@ -599,7 +594,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                           ),
                           sd.Text(
-                            resumeData.sYear!,
+                            '                            2018-2020',
                             style: const sd.TextStyle(
                               fontSize: 14,
                               color: PdfColor.fromInt(0xff19256E),
@@ -638,7 +633,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         height: 15,
                       ),
                       sd.Text(
-                        resumeData.rName!,
+                        '    Drashti Patel',
                         style: sd.TextStyle(
                           fontSize: 18,
                           color: const PdfColor.fromInt(0xff19256E),
@@ -646,21 +641,21 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ),
                       sd.Text(
-                        resumeData.rCompanyName!,
+                        '     CEO',
                         style: const sd.TextStyle(
                           fontSize: 16,
                           color: PdfColor.fromInt(0xff19256E),
                         ),
                       ),
                       sd.Text(
-                        resumeData.rPhone!,
+                        '     Phone: +123-456-7890',
                         style: const sd.TextStyle(
                           fontSize: 16,
                           color: PdfColor.fromInt(0xff19256E),
                         ),
                       ),
                       sd.Text(
-                        resumeData.rEmail!,
+                        '     Email: hello@gmail.com',
                         style: const sd.TextStyle(
                           fontSize: 16,
                           color: PdfColor.fromInt(0xff19256E),
@@ -670,7 +665,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         height: 15,
                       ),
                       sd.Text(
-                        '',
+                        '    Riya Patel',
                         style: sd.TextStyle(
                           fontSize: 18,
                           color: const PdfColor.fromInt(0xff19256E),

@@ -109,7 +109,7 @@ class _SkillsScreenState extends State<SkillsScreen> {
                             ),
                           ),
                         ),
-                        const SizedBox(width: 95,),
+                        const SizedBox(width: 70,),
                         IconButton(onPressed: () {
                           setState(() {
         
@@ -210,7 +210,7 @@ class _SkillsScreenState extends State<SkillsScreen> {
                               ),
                             ),
                           ),
-                          const SizedBox(width: 95,),
+                          const SizedBox(width: 70,),
                           IconButton(onPressed: () {
                             setState(() {
                               txtSkillsController!.removeAt(index);

@@ -5,17 +5,17 @@ import 'package:resume_builder_app/view/screens/loginscreen.dart';
 
 
 void main(){
-  runApp(const MyApp());
+  runApp(const ResumeApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class ResumeApp extends StatelessWidget {
+  const ResumeApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/home',
+      initialRoute: '/splash',
       routes: {
         '/splash' : (context) =>  const SplashScreen(),
         '/login' : (context) =>  const LoginScreen(),

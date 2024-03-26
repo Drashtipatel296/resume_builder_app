@@ -180,7 +180,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   ),
                   Flexible(
                     child: Padding(
-                      padding: const EdgeInsets.all(15),
+                      padding: const EdgeInsets.all(12),
                       child: DropdownButtonFormField<String>(
                         hint: const Text('Select your gender'),
                         decoration: InputDecoration(
@@ -388,9 +388,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
       ),
     );
   }
-
-
-
   void setImage() async {
     ImagePicker imagePicker = ImagePicker();
     XFile? image = await imagePicker.pickImage(source: ImageSource.gallery);
